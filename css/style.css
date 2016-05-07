@@ -24,6 +24,7 @@ nav li {
 .header-nav {
     background-color: #000000;
     padding: 30px;
+    width: 100%;
 }
 
 .header-nav ul li {
@@ -56,6 +57,24 @@ nav li {
 
 .rounded {
     border-radius: 2px;
+}
+
+.process-icon {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.process-icon img {
+    height: 72px;
+    width: 72px;
+    margin: 13px;
+}
+
+section {
+    margin: 75px 0 0 110px;
 }
 
 
