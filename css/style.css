@@ -1,0 +1,59 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    background: #494744;
+    color: #FFF;
+}
+
+nav li {
+    color: #FFF;
+}
+
+.bio-image {
+    border-radius: 50%;
+    text-align: center;
+    margin: 50px auto 30px auto;
+}
+
+.header-title {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.header-nav {
+    background-color: #000000;
+    padding: 30px;
+}
+
+.header-nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 1.4em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    float: right;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.social-icons img {
+    width: 38px;
+    height: 38px;
+}
+
+.social-icons ul li {
+    display: inline;
+}
+
+
+
+
+
+
+
