@@ -4,5 +4,7 @@
         strings: ["^1000 Design and Development solutions."],
         typeSpeed: 0
       });
+      console.log("ok");
+
   });
 

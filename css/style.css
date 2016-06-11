@@ -73,6 +73,12 @@
 .social-icons {
 	color: #D98700;
 	margin-right: 25px;
+	display: inline-block;
+}
+
+.fa-github:active {
+	margin-right: 0;
+	padding: 0;
 }
 
 
@@ -121,7 +127,11 @@ footer {
 	text-align: center;
 }
 
-
+footer a:hover {
+	background: none;
+	padding: none;
+	margin: none;
+}
 
 
 /* Pseudo Selectors */
@@ -132,8 +142,7 @@ a:hover {
 
 a:active {
 	color: #fff;
-	border: 2px solid #D98700;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding: 10px;
 	background: #D98700;
 	text-decoration: none;
