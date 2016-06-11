@@ -4,19 +4,20 @@
         <title>Perry's Development</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header>
-             <div id="#header">
+             <div>
                 <!-- Logo -->
                 <img class="logo" src="images/logo.svg" alt="Perry's Development logo">
                    <!-- Nav links -->
             <nav>
                 <ul>
-                    <li><a href="#">Portfolio</a></li>  
-                    <li><a href="#">Contact</a></li>
-                    <li class="active"><a href="#">Home</a></li> 
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>  
+                    <li><a class="active" href="index.html">Home</a></li> 
                 </ul>
             </nav>
             </div>
@@ -24,23 +25,31 @@
             <img class="hero" src="images/hero.jpeg" alt="Header background image">
         </header>
 
+        <!-- Typed JS -->
+        <div id="typed"></div>
+
         <!-- Container -->
         <section class="container">
             <div class="col-md-4">
                 <img class="process-icon" src="images/plan.svg">
-                <h4>Plan</h4>
+                <h4 class="process-header">Plan</h4>
+                <p class="process-text">Nothing great gets accomplished without first planning and developing the idea. We work with you to further develop your business and ideas. Working towards a common vision and goal will be most important in this phase of the process.</p>
             </div>
             <div class="col-md-4">
                 <img class="process-icon" src="images/design.svg">
-                <h4>Design</h4>
+                <h4 class="process-header">Design</h4>
+                <p class="process-text">Applying design principles and a common thought process. We will create a wireframe and mockups of the site that meet business requirements. The UI/UX will be set during this process. Any changes will be made during the design phase. </p>
             </div>
             <div class="col-md-4">
                 <img class="process-icon" src="images/code.svg">
-                <h4>Build</h4>
+                <h4 class="process-header">Build</h4>
+                <p class="process-text">In the Build phase all changes have been finalized and approved. Using web technologies we build out a fully functioning application. The project will be signed off on during this phase once all requirements are met.</p>
             </div>
         </section>
         <!-- Footer -->
-        <footer>Footer</footer
+        <footer>Footer</footer>
+        <script type="text/javascript" src="js/lib/typedjs/dist/typed.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
 

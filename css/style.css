@@ -1,3 +1,16 @@
+/* IDs */
+
+#typed {
+	color: #D98700;
+	font-size: 3.6em;
+	text-align: center;
+	position: absolute;
+	top: 690px;
+	left: 460px;
+}
+
+
+
 /* Classes */
 .hero {
 	width: 100%;
@@ -16,9 +29,11 @@
 }
 
 .active {
-	color: #D98700;
+	color: #fff;
 	border: 2px solid #D98700;
 	border-radius: 15px;
+	padding: 10px;
+	background: #D98700;
 }
 
 .process-icon {
@@ -27,10 +42,21 @@
 	margin-top: 75px;
 }
 
-.col-md-4 {
-	padding-right: 30px;
+.process-header {
+	font-size: 1.8em;
+	margin-bottom: 30px;
+
 }
 
+.process-text {
+	width: 85%;
+	line-height: 20px;
+}
+
+.col-md-4 {
+	padding-right: 30px;
+	margin-bottom: 100px;
+}
 
 
 /* Element Selectors */
@@ -60,12 +86,23 @@ nav li {
 h4 {
 	font-size: 2em;
 	text-indent: 95px;
+	color: #D98700;
+
 }
 
 /* Pseudo Selectors */
 
 a:hover {
 	color: #D98700;
+}
+
+a:active {
+	color: #fff;
+	border: 2px solid #D98700;
+	border-radius: 20px;
+	padding: 10px;
+	background: #D98700;
+	text-decoration: none;
 }
 
 a:link {
@@ -76,5 +113,8 @@ a:link {
 a:visited {
 	color: #fff;
 }
+
+
+
 
 
