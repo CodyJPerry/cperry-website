@@ -34,6 +34,7 @@
 	border-radius: 15px;
 	padding: 10px;
 	background: #D98700;
+	font-weight: 600;
 }
 
 .process-icon {
@@ -43,8 +44,9 @@
 }
 
 .process-header {
-	font-size: 1.8em;
+	font-size: 2em;
 	margin-bottom: 30px;
+	font-weight: bold;
 
 }
 
@@ -76,6 +78,11 @@
 
 
 /* Element Selectors */
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 header div {
 	position: fixed;
 	background: rgba(0, 0, 0, .5);
