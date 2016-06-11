@@ -1,57 +1,46 @@
 <!DOCTYPE html> 
 <html>
     <head>
-        <title>Cody Perry Design | Development</title>
+        <title>Perry's Development</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Nunito:700,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <!-- Header and Nav -->
-        <nav class="col-md-12 header-nav"> 
+        <header>
+             <div id="#header">
+                <!-- Logo -->
+                <img class="logo" src="images/logo.svg" alt="Perry's Development logo">
+                   <!-- Nav links -->
+            <nav>
                 <ul>
-                    <a href=""><li>Contact</li></a>
-                    <a href=""><li>Portfolio</li></a>
-                    <a href=""><li>Home</li></a>
+                    <li><a href="#">Portfolio</a></li>  
+                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#">Home</a></li> 
                 </ul>
-        </nav>
-        <div class="container-fluid"><!--Wraps all content -->
-            <header class="col-md-12">
-                <div class="img-logo"><img class="img-responsive bio-image" src="images/cody.jpeg" alt="Cody Perry"></div>
-                <h1 class="header-title">Cody Perry</h1>
-                <h2 class="header-title">Front End Web Developer</h2>
-            </header>
-            <div class="col-md-12 col-md-offset-5">
-                <!--Media Icons -->
-                <ul class="social-icons">
-                <li><img src="images/linkedin.png" alt="LinkedIn Icon"></li>
-                <li><img src="images/twitter.png" alt="Twitter Icon"></li>
-                <li><img class="rounded" src="images/udacity.png" alt="Udacity Icon"></li>
-                </ul>
+            </nav>
             </div>
-            <!-- Build process -->
-            <section class="col-md-12">
-                <div class="col-md-4">
-                    <div class="process-icon">
-                        <img src="images/plan.svg" alt="Wireframe icon">
-                    </div>
-                    <p></p>
-                </div>
-                <div class="col-md-4">
-                    <div class="process-icon">
-                        <img src="images/design.png" alt="Wireframe icon">
-                    </div>
-                    <p></p>
-                </div>
-                <div class="col-md-4">
-                    <div class="process-icon">
-                      <img src="images/build.png" alt="Wireframe icon">
-                    </div>
-                    <p></p>
-                </div>
-            </section>
-        </div>
-        <footer class="col-md-12">Copyright</footer>
+            <!-- Hero header image -->
+            <img class="hero" src="images/hero.jpeg" alt="Header background image">
+        </header>
+
+        <!-- Container -->
+        <section class="container">
+            <div class="col-md-4">
+                <img class="process-icon" src="images/plan.svg">
+                <h4>Plan</h4>
+            </div>
+            <div class="col-md-4">
+                <img class="process-icon" src="images/design.svg">
+                <h4>Design</h4>
+            </div>
+            <div class="col-md-4">
+                <img class="process-icon" src="images/code.svg">
+                <h4>Build</h4>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>Footer</footer
     </body>
 </html>
+
