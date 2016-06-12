@@ -9,6 +9,20 @@
 	left: 460px;
 }
 
+#contactText {
+	color: #D98700;
+	font-size: 3.6em;
+	text-align: center;
+	position: absolute;
+	top: 690px;
+	left: 460px;
+}
+
+/* Set for sticky footer */
+#wrapper {
+	min-height: calc(100vh - 350px);
+}
+
 
 
 /* Classes */
@@ -76,11 +90,32 @@
 	display: inline-block;
 }
 
-.fa-github:active {
-	margin-right: 0;
-	padding: 0;
+.form-control {
+	width: 100%;
 }
 
+.modal-content {
+	width: 100%;
+	padding: 50px;
+}
+
+.contact-btn {
+	font-size: 3em;
+	color: #fff;
+	background: #D98700;
+	font-weight: 500;
+}
+
+.contact-form {
+	position: absolute;
+	top : 70%;
+	left: 50%;
+
+}
+
+.modal-header {
+	font-size: 2em;
+}
 
 
 /* Element Selectors */
@@ -125,6 +160,7 @@ footer {
 	color: white;
 	font-size: 1.5em;
 	text-align: center;
+	position: fixed;
 }
 
 footer a:hover {
@@ -133,6 +169,10 @@ footer a:hover {
 	margin: none;
 }
 
+footer a:active {
+	padding: 0 !important;
+	margin: 0 !important;
+}
 
 /* Pseudo Selectors */
 
