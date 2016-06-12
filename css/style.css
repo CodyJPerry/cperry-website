@@ -16,12 +16,13 @@
 	position: absolute;
 	top: 690px;
 	left: 460px;
+	display: inline;
 }
 
 /* Set for sticky footer */
-#wrapper {
+/*#wrapper {
 	min-height: calc(100vh - 350px);
-}
+}*/
 
 
 
@@ -115,11 +116,22 @@
 
 .modal-header {
 	font-size: 2em;
+	font-weight: bold;
+	color: #D98700;
+}
+
+.typed-cursor {
+	display: none;
+}
+
+.portfolio-images {
+	margin-top: 50px;
+	padding-right: 25px;
 }
 
 /* Element Selectors */
 
-body {
+body, html {
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
 	padding: 0;
