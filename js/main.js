@@ -14,3 +14,38 @@
 
   });
 
+
+
+
+//Lightbox Gallery
+
+//Create DOM elements to be added
+var $overlay = $('<div id="overlay"></div>');
+var $image = $('<img>');
+
+
+//append image within overlay
+$overlay.append($image);
+
+//append overlay dom element as a child of body
+$('body').append($overlay);
+
+//add click listener to images
+$('#imageGallery img').on('click', function(event) {
+
+  //Store current images link href attribute 
+  var imgLocation = $(this).attr('src');
+
+  //prevent default click action
+  event.preventDefault();
+
+  $image.attr('src', imgLocation);
+
+  $overlay.show();
+});
+
+
+//When overlay is clicked, hide the overlay
+$overlay.on('click', function() {
+  $(this).hide();
+});
