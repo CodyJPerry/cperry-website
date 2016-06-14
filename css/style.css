@@ -156,6 +156,27 @@
 	padding-right: 25px;
 }
 
+.portfolio-text {
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+	color: rgba(0,0,0, .7);
+	margin-top: 15px;
+}
+
+.video {
+	margin-top: 10px;
+	padding: right: 25px;
+	width: 335px;
+	height: 358.38px;
+}
+
+.col-md-4 {
+	margin-bottom: 10px;
+}
+
+
+
 /* Element Selectors */
 
 html {
@@ -209,6 +230,7 @@ footer {
 	font-size: 1.5em;
 	text-align: center;
 	position: fixed;
+	margin-top: 70px;
 }
 
 footer a:hover {
