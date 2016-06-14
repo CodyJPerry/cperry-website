@@ -22,6 +22,7 @@
 #imageGallery img {
 	width: 360px;
 	height: 325px;
+	margin-top: 50px;
 }
 
 
@@ -38,9 +39,9 @@
 }
 
 #overlay img {
-	margin-top: 20%;
-	width: 360px;
-	height: 325px;
+	margin-top: 15%;
+	width: 500px;
+	height: 500px;
 	background: #fff;
 	padding: 30px;
 }
@@ -221,6 +222,17 @@ footer a:active {
 	margin: 0 !important;
 }
 
+video {
+	width: 500px;
+	height: 500px;
+	margin-top: 10%;
+	background: #fff;
+	padding: 30px;
+}
+
+
+
+
 
 /* Pseudo Selectors */
 
@@ -236,6 +248,8 @@ a:link {
 a:visited {
 	color: #fff;
 }
+
+
 
 
 

@@ -22,8 +22,11 @@
 //Create DOM elements to be added
 var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
+var $video = $('<video controls src=""/>');
 
 
+
+function appendImage() {
 //append image within overlay
 $overlay.append($image);
 
@@ -43,6 +46,39 @@ $('#imageGallery img').on('click', function(event) {
 
   $overlay.show();
 });
+
+}
+
+
+
+function appendVideo() {
+//Video click event
+$('#imageGallery video').on('click', function(event) {
+    //prevent link taking you to a new page
+    event.preventDefault();
+
+    //remove image from body when clicked
+    $image.remove();
+
+    //get src attributes value
+    var videoLocation = $(this).attr('src');
+
+    //set src attributes value
+    $video.attr('src', videoLocation);
+
+    //append overlay to body
+    $overlay.append($video);
+    $('body').append($overlay);
+
+    $overlay.show();
+});
+
+}
+//Call to enable overlay on images
+appendImage();
+
+//Call to enable overlay for videos
+appendVideo();
 
 
 //When overlay is clicked, hide the overlay
