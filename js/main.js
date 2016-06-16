@@ -23,12 +23,15 @@
 var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
 var $video = $('<video controls src=""/>');
-
+var $caption = $('<p class="overlay-caption"></p>')
 
 
 function appendImage() {
 //append image within overlay
 $overlay.append($image);
+//append caption onto overlay underneath image
+$overlay.append($caption);
+
 
 //append overlay dom element as a child of body
 $('body').append($overlay);
@@ -42,6 +45,12 @@ $('#imageGallery img').on('click', function(event) {
   //prevent default click action
   event.preventDefault();
 
+  //get image attribute value
+  var captionText = $(this).attr('alt');
+
+  //append value from alt attribute into the $caption 
+  $caption.text(captionText);
+
   $image.attr('src', imgLocation);
 
   $overlay.show();
@@ -51,7 +60,13 @@ $('#imageGallery img').on('click', function(event) {
 
 
 
+
+
 function appendVideo() {
+
+    //append overlay to body
+    $overlay.append($video);
+
 //Video click event
 $('#imageGallery video').on('click', function(event) {
     //prevent link taking you to a new page
@@ -66,8 +81,6 @@ $('#imageGallery video').on('click', function(event) {
     //set src attributes value
     $video.attr('src', videoLocation);
 
-    //append overlay to body
-    $overlay.append($video);
     $('body').append($overlay);
 
     $overlay.show();
@@ -85,3 +98,8 @@ appendVideo();
 $overlay.on('click', function() {
   $(this).hide();
 });
+
+
+
+
+

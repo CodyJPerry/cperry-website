@@ -175,6 +175,14 @@
 	margin-bottom: 10px;
 }
 
+.overlay-caption {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+	color: rgb(215, 215, 215);
+	margin-top: 15px;
+}
+
 
 
 /* Element Selectors */
@@ -230,7 +238,7 @@ footer {
 	font-size: 1.5em;
 	text-align: center;
 	position: fixed;
-	margin-top: 70px;
+	margin-top: 80px;
 }
 
 footer a:hover {
@@ -251,8 +259,6 @@ video {
 	background: #fff;
 	padding: 30px;
 }
-
-
 
 
 
