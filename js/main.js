@@ -23,7 +23,8 @@
 var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
 var $video = $('<video controls src=""/>');
-var $caption = $('<p class="overlay-caption"></p>')
+var $caption = $('<p class="overlay-caption"></p>');
+var $icons = $('<div><i></i></div>');
 
 
 function appendImage() {
@@ -31,6 +32,9 @@ function appendImage() {
 $overlay.append($image);
 //append caption onto overlay underneath image
 $overlay.append($caption);
+//append Div for icons
+$overlay.append($icons);
+
 
 
 //append overlay dom element as a child of body
@@ -41,6 +45,8 @@ $('#imageGallery img').on('click', function(event) {
 
   //Store current images link href attribute 
   var imgLocation = $(this).attr('src');
+
+  $image.show();
 
   //prevent default click action
   event.preventDefault();
@@ -64,17 +70,18 @@ $('#imageGallery img').on('click', function(event) {
 
 function appendVideo() {
 
+  // // if overlay has image remove it
+  // $overlay.children($image) ? $overlay.remove($image) : $overlay.append($image);
+
     //append overlay to body
     $overlay.append($video);
 
-//Video click event
+//Vi33deo click event
 $('#imageGallery video').on('click', function(event) {
     //prevent link taking you to a new page
     event.preventDefault();
 
-    //remove image from body when clicked
-    $image.remove();
-
+    $image.hide();
     //get src attributes value
     var videoLocation = $(this).attr('src');
 
