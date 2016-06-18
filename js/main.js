@@ -12,9 +12,15 @@
       	typeSpeed: 0
       });
 
+      //portfolio page
+      $("#portfolio-intro").typed({
+        strings: ["^1000 Have a look at my previous projects."],
+        typedSpeed: 0
+      });
+
+
+
   });
-
-
 
 
 //Lightbox Gallery
@@ -24,7 +30,9 @@ var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
 var $video = $('<video controls src=""/>');
 var $caption = $('<p class="overlay-caption"></p>');
-var $icons = $('<div><a href="#"><i class="fa fa-external-link fa-3x" aria-hidden="true"></i></a><a href="#"><i class="fa fa-github overlay-github fa-3x" aria-hidden="true"></i></a></div>');
+var $external = $('<a href="#" target="_blank"><i class="fa fa-external-link fa-3x" aria-hidden="true"></i></a>');
+var $github = $('<a href="#" target="_blank"><i class="fa fa-github overlay-github fa-3x" aria-hidden="true"></i></a>');
+var $icons = $('<div></div>');
 
 
 function appendImage() {
@@ -41,9 +49,12 @@ $('#imageGallery img').on('click', function(event) {
   //Store current images link href attribute 
   var imgLocation = $(this).attr('src');
 
+  //hide any video or icons and only show image
   $video.hide();
 
   $image.show();
+
+  $icons.hide();
 
   //prevent default click action
   event.preventDefault();
@@ -69,17 +80,45 @@ function appendVideo() {
     //append overlay to body
     $overlay.append($video);
 
+    //append icon links to icons div
+    $icons.append($external);
+    $icons.append($github);
+
+    //append icons div and links to overlay
     $overlay.append($icons);
 
+    //append caption under icons div
     $overlay.append($caption);
+
 
 //Video click event
 $('#imageGallery video').on('click', function(event) {
 
+    //show video and icons
     $video.show();
+
+    $icons.show();
 
     //get caption text from sibling element and store in a variable
      var captionText = event.target.parentNode.nextElementSibling.textContent;
+
+     //store href value
+     var projectLink = event.target.parentNode.getAttribute('href');
+
+
+     //set github href value upon what the event.targets href value is
+     if (projectLink === "http://cperry24.github.io/arcade-game/") {
+        $github.attr('href', 'https://github.com/cperry24/arcade-game' )
+     } else if (projectLink === "http://cperry24.github.io/interactive-map/") {
+        $github.attr('href', 'https://github.com/cperry24/interactive-map');
+     } else {
+      $github.attr('href', 'https://github.com/cperry24/todo-app');
+     }
+
+
+
+     //update href value with event.targets href
+    $external.attr('href', projectLink);
 
      //update text of caption
     $caption.text(captionText);
@@ -100,6 +139,7 @@ $('#imageGallery video').on('click', function(event) {
 });
 
 }
+
 //Call to enable overlay on images
 appendImage();
 

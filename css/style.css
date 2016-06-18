@@ -19,6 +19,16 @@
 	display: inline;
 }
 
+
+#portfolio-intro {
+	color: #D98700;
+	font-size: 3.6em;
+	text-align: center;
+	position: absolute;
+	top: 690px;
+	left: 460px;
+}
+
 #imageGallery img {
 	width: 360px;
 	height: 325px;
@@ -50,8 +60,6 @@
 #wrapper {
 	min-height: calc(100vh - 350px);
 }
-
-
 
 /* Classes */
 .hero {
@@ -243,7 +251,6 @@ footer {
 	font-size: 1.5em;
 	text-align: center;
 	position: fixed;
-	margin-top: 80px;
 }
 
 footer a:hover {
@@ -263,6 +270,10 @@ video {
 	margin-top: 10%;
 	background: #fff;
 	padding: 30px;
+}
+
+section {
+	margin-bottom: 80px;
 }
 
 
