@@ -26,7 +26,8 @@
 	text-align: center;
 	position: absolute;
 	top: 690px;
-	left: 460px;
+	left: 120px;
+	background: none;
 }
 
 #imageGallery img {
@@ -276,8 +277,6 @@ section {
 	margin-bottom: 80px;
 }
 
-
-
 /* Pseudo Selectors */
 
 a:hover {
@@ -292,6 +291,9 @@ a:link {
 a:visited {
 	color: #fff;
 }
+
+/* Media Queries*/
+
 
 
 
