@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Perry's Development</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                 <div>
+                    <!-- Logo -->
+                    <a href="index.html"><img class="logo" src="images/logo.svg" alt="Perry's Development logo"></a>
+                       <!-- Nav links -->
+                <nav>
+                    <ul>
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>  
+                        <li><a href="index.html">Home</a></li> 
+                    </ul>
+                </nav>
+                </div>
+                <!-- Hero header image -->
+                <img class="hero img-responsive" src="images/hero.jpeg" alt="Header background image">
+            </header>
+
+            <!-- Typed JS -->
+            <div id="contactText"></div>
+
+        <div class="contact-form col-md-12">
+         <button class="btn btn-lg contact-btn" data-toggle="modal" data-target="#contactForm">Contact Us</button>
+        </div>
+
+        <section class="col-md-12 modal fade" id="contactForm" tabindex="-1" role="form" aria-labelledby="Contact Form">
+            <!-- Contact Form -->
+            <form class="modal-content">
+                <div class="modal-header">Contact Us</div>
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" id="name">
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="text" placeholder="Email" id="email">
+                </div>
+                <!-- Company -->
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input class="form-control" type="text" placeholder="Company" id="company">
+                </div>
+                <!-- Project -->
+                <div class="form-group">
+                    <label for="project">What kind of Project?</label>
+                    <input class="form-control" list="project">
+                    <datalist id="project">
+                        <option value="Web Design">
+                        <option value="Web Development">
+                        <option value="Application">
+                        <option value="Brand Identity">
+                    </datalist>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" placeholder="Tell us about the project" id="message"></textarea>
+                </div>
+                <!-- Submit button -->
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-lg">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+        <!-- Footer -->
+        <footer class="col-md-12 col-sm-12">
+            <p class="copyright"><i class="fa fa-copyright"></i> Perry's Development. All rights reserved.</p>
+            <!-- Social Icons -->
+            <p>
+                <a href="https://github.com/cperry24"><i class="fa fa-github fa-3x social-icons" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/CodyPerry24"><i class="fa fa-twitter fa-3x social-icons" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/codyperry24"><i class="fa fa-linkedin fa-3x social-icons"></i></a>
+            </p>
+        </footer>
+
+        <script type="text/javascript" src="js/lib/typedjs/dist/typed.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,42 @@
+/*Tablet size displays*/
+@media only screen and (max-width: 1000px) {
+
+	
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    
+    
+}
+
+@media only screen and (max-width: 500px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #wrapper > * {
+        flex-grow: 1 100%;
+    }
+    
+    #typed {
+        display: none;
+    }
+    
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .flex-item > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
