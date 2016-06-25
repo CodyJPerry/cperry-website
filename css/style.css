@@ -4,18 +4,12 @@
 	color: #D98700;
 	font-size: 3.6em;
 	text-align: center;
-	position: absolute;
-	top: 690px;
-	left: 460px;
 }
 
 #contactText {
 	color: #D98700;
 	font-size: 3.6em;
 	text-align: center;
-	position: absolute;
-	top: 690px;
-	left: 460px;
 	display: inline;
 }
 
@@ -24,9 +18,6 @@
 	color: #D98700;
 	font-size: 3.6em;
 	text-align: center;
-	position: absolute;
-	top: 690px;
-	left: 120px;
 	background: none;
 }
 
@@ -58,9 +49,11 @@
 }
 
 /* Set for sticky footer */
+/*
 #wrapper {
 	min-height: calc(100vh - 350px);
 }
+*/
 
 /* Classes */
 .hero {
@@ -96,7 +89,6 @@
 
 .process-header {
 	font-size: 2em;
-	margin-bottom: 30px;
 	font-weight: bold;
 
 }
@@ -213,6 +205,10 @@ body  {
 	padding: 0;
 	height: 100%;
 
+}
+
+header {
+    display: flex;
 }
 
 header div {

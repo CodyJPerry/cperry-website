@@ -1,35 +1,42 @@
 /*Tablet size displays*/
 @media only screen and (max-width: 1000px) {
 
-	#typed {
-		display: none;
-	}
-    
-    .process-text {
-        width: 95%;
-        margin: 20px auto;
-        font-size: 1.4em;
-        line-height: 30px;
-    }
-    
-    .process-group {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .process-header {
-        text-align: center;
-        width: 100%;
-        margin-left: -50px;
-        margin-right: 2px;
-    }
-    
-    .process-icon {
-        margin: 0 auto;
-    }
-    
-    .process-icon:nth-child(1) {
-        margin-top: 70px;
-    }
+	
+}
 
+
+@media only screen and (max-width: 900px) {
+
+    
+    
+}
+
+@media only screen and (max-width: 500px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #wrapper > * {
+        flex-grow: 1 100%;
+    }
+    
+    #typed {
+        display: none;
+    }
+    
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .flex-item > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
