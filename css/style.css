@@ -27,7 +27,7 @@
 	margin-top: 50px;
 }
 
-
+/* Overlay */
 #overlay {
 	background: rgba(0, 0, 0, .8);
 	width: 100%;
@@ -142,7 +142,6 @@
 
 .portfolio-images {
 	margin-top: 50px;
-	padding-right: 25px;
 }
 
 .portfolio-text {
@@ -154,8 +153,6 @@
 }
 
 .video {
-	margin-top: 10px;
-	padding: right: 25px;
 	width: 335px;
 	height: 358.38px;
 }
@@ -258,7 +255,6 @@ video {
 	height: 500px;
 	margin-top: 10%;
 	background: #fff;
-	padding: 30px;
 }
 
 section {
