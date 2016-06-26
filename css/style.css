@@ -32,7 +32,7 @@
 	background: rgba(0, 0, 0, .8);
 	width: 100%;
 	height: 100%;
-	display: none;
+    display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -41,12 +41,25 @@
 }
 
 #overlay img {
-	margin-top: 10%;
-	width: 500px;
-	height: 500px;
+    margin-top: 10%;
 	background: #fff;
 	padding: 30px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
 }
+
+#overlay video {
+    margin-top: 10%;
+	background: #fff;
+	padding: 30px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+
+
 
 /* Classes */
 .hero {
@@ -107,27 +120,15 @@
     padding-bottom: 25px;
 }
 
-.form-control {
-	width: 100%;
+.contact-form {
+    width: 50%;
+    margin: auto;
+    
 }
 
 .modal-content {
 	width: 100%;
 	padding: 50px;
-}
-
-.contact-btn {
-	font-size: 3em;
-	color: #fff;
-	background: #D98700;
-	font-weight: 500;
-}
-
-.contact-form {
-	position: absolute;
-	top : 70%;
-	left: 50%;
-
 }
 
 .modal-header {
@@ -185,6 +186,26 @@
     
 }
 
+/*Shrink navbar on scroll*/
+
+.shrink {
+    font-size: 0.8em;
+}
+
+
+.shrink img {
+    width: 75%;
+    height: 75%;
+}
+
+.shrink > * {
+    font-size: 0.8em;
+    height: 50px;
+    display: none;
+    
+}
+
+
 
 /* Element Selectors */
 
@@ -211,6 +232,10 @@ header div {
 }
 
 /* Nav styling */
+
+ul {
+    padding: 0;
+}
 
 nav ul {
 	list-style: none;

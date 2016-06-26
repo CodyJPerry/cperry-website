@@ -29,12 +29,18 @@
         margin-top: 20px;
     }
     
+     #imageGallery {
+        display: flex;
+         flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
 }
 
 
 @media only screen and (max-width: 950px) {
        .logo {
-        width: 100%;
+        width: 85%;
         height: 85%;
         text-align: center;
         padding: 30px;
@@ -57,18 +63,37 @@
         align-content: center;
     }
 
-    #typed {
+    #typed, #portfolio-intro, #contactText {
         font-size: 2.3em;
         margin-top: 20px;
+        text-align: center;
+    }
+    
+    #imageGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #imageGallery img {
+        flex: 4 1 100%;
     }
     
     .container {
+        display: flex;
         flex-wrap: wrap;
     }
     
     .container-tablet {
         display: flex;
     }
+    
+    .portfolio-images {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -82,9 +107,9 @@
         flex-grow: 1 100%;
     }
     
-    #typed, #portfolio-intro {
+    #typed, #portfolio-intro, #contactText {
         display: flex;
-        font-size: 1.7em;
+        font-size: 1.3em;
         justify-content: center;
         align-content: space-around;
         flex-wrap: wrap;
@@ -92,11 +117,40 @@
         
     }
     
+    #contact-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     #imageGallery {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         margin: 0 auto;
+        padding: 20px;
+    }
+    
+    #overlay img {
+    margin-top: 10%;
+	background: #fff;
+	padding: 30px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+    #overlay video {
+    margin-top: 10%;
+	background: #fff;
+	padding: 30px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+    
+    #contactForm {
+
     }
     
     
@@ -150,11 +204,12 @@
     
     .flex-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-left: 20px;
     }
     
     .flex-nav li {
-        flex: 3 1 33.33%;
+        flex: 3 1;
         font-size: 1.5em;
         margin-bottom: 20px;
     }
@@ -184,12 +239,17 @@
         padding-bottom: 25px;
     }
     
+    .contact-btn {
+        font-size: 1.5em;
+        margin: 30px;
+    }
+    
     
     footer {
         display: flex;
         margin-top: 35px;
+        position: static;
+        bottom: 0;
     }
-    
-    
 
 }
