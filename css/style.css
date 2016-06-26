@@ -48,13 +48,6 @@
 	padding: 30px;
 }
 
-/* Set for sticky footer */
-/*
-#wrapper {
-	min-height: calc(100vh - 350px);
-}
-*/
-
 /* Classes */
 .hero {
 	width: 100%;
@@ -66,10 +59,7 @@
 }
 
 .logo {
-	margin: 25px;
 	z-index: 1;
-	padding: 5px;
-	float: left;
 }
 
 .active {
@@ -90,19 +80,17 @@
 .process-header {
 	font-size: 2em;
 	font-weight: bold;
-
 }
 
 .process-text {
-	width: 85%;
+	width: 80%;
 	line-height: 22px;
 	font-size: 1.1em;
+    text-align: justify;
+    flex: 1;
+    align-self: center;
 }
 
-.col-md-4 {
-	padding-right: 30px;
-	margin-bottom: 100px;
-}
 
 .fa-copyright {
 	color: white;
@@ -115,8 +103,6 @@
 
 .social-icons {
 	color: #D98700;
-	margin-right: 25px;
-	display: inline-block;
 }
 
 .form-control {
@@ -172,10 +158,6 @@
 	height: 358.38px;
 }
 
-.col-md-4 {
-	margin-bottom: 10px;
-}
-
 .overlay-caption {
 	font-size: 1.5em;
 	text-align: center;
@@ -189,7 +171,26 @@
 	margin: 25px 10px 0 10px;
 }
 
+/*Flexbox*/
 
+.container {
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+ .flex-item > * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 
 /* Element Selectors */
 
@@ -207,9 +208,6 @@ body  {
 
 }
 
-header {
-    display: flex;
-}
 
 header div {
 	position: fixed;
@@ -222,32 +220,28 @@ header div {
 
 nav ul {
 	list-style: none;
-	margin: 35px 50px 0 0;
 }
 
 nav li {
-	display: inline-block;
-	float: right;
 	font-size: 2em;
 	padding: 12px;
 	color: #fff;
-	margin: 12px;
 }
 
 h4 {
 	font-size: 2em;
-	text-indent: 95px;
 	color: #D98700;
+    margin-bottom: 20px;
 
 }
 
 footer {
 	background: rgba(0, 0, 0, .8);
-	height: 350px;
 	color: white;
 	font-size: 1.5em;
 	text-align: center;
-	position: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 footer a:hover {
