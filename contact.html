@@ -10,36 +10,29 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="wrapper">
-            <header>
-                 <div>
+            <header class="header">
+                 <div class="header-nav">
                     <!-- Logo -->
                     <a href="index.html"><img class="logo" src="images/logo.svg" alt="Perry's Development logo"></a>
                        <!-- Nav links -->
                 <nav>
-                    <ul>
-                        <li><a class="active" href="contact.html">Contact</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>  
+                    <ul class="flex-nav">
                         <li><a href="index.html">Home</a></li> 
+                        <li><a href="portfolio.html">Portfolio</a></li> 
+                        <li><a class="active" href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 </div>
-                <!-- Hero header image -->
-                <img class="hero img-responsive" src="images/hero.jpeg" alt="Header background image">
             </header>
 
-            <!-- Typed JS -->
-            <div id="contactText"></div>
-
-        <div class="contact-form col-md-12">
-         <button class="btn btn-lg contact-btn" data-toggle="modal" data-target="#contactForm">Contact Us</button>
-        </div>
-
-        <section class="col-md-12 modal fade" id="contactForm" tabindex="-1" role="form" aria-labelledby="Contact Form">
+        <section id="contactForm" tabindex="-1" role="form" aria-labelledby="Contact Form">
             <!-- Contact Form -->
-            <form class="modal-content">
+            <form class="contact-form">
                 <div class="modal-header">Contact Us</div>
                 <!-- Name -->
                 <div class="form-group">
@@ -80,7 +73,7 @@
         </section>
     </div>
         <!-- Footer -->
-        <footer class="col-md-12 col-sm-12">
+        <footer>
             <p class="copyright"><i class="fa fa-copyright"></i> Perry's Development. All rights reserved.</p>
             <!-- Social Icons -->
             <p>

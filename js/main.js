@@ -23,6 +23,17 @@
   });
 
 
+
+// Scroll navbar effect
+$(window).scroll(function() {
+     if ($(document).scrollTop() > 550) {
+    $('header div').addClass('shrink');
+  } else {
+    $('header div').removeClass('shrink');
+  }
+});
+
+
 //Lightbox Gallery
 
 //Create DOM elements to be added
