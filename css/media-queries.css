@@ -82,7 +82,7 @@
         flex-grow: 1 100%;
     }
     
-    #typed {
+    #typed, #portfolio-intro {
         display: flex;
         font-size: 1.7em;
         justify-content: center;
@@ -92,11 +92,22 @@
         
     }
     
+    #imageGallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    
+    
     header div {
         background: rgba(0, 0, 0, 0.9);
         position: static;
     }
-
+    
+    video {
+        margin: 35px auto;
+    }
     
     .header-nav {
         display: block;
@@ -139,7 +150,7 @@
     
     .flex-nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
     .flex-nav li {
@@ -173,8 +184,12 @@
         padding-bottom: 25px;
     }
     
+    
     footer {
         display: flex;
+        margin-top: 35px;
     }
+    
+    
 
 }
