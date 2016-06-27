@@ -173,6 +173,10 @@
 	margin: 25px 10px 0 10px;
 }
 
+.form-group {
+    margin-top: 10px;
+}
+
 /*Flexbox*/
 
 .container {
