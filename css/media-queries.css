@@ -45,9 +45,10 @@
         flex-basis: 1 1 33.33%;
     }
     
-     .portfolio-images {
-        width: 33.33%;
+    footer {
+        margin-top: 35px;
     }
+    
     
 }
 
