@@ -186,7 +186,7 @@
     
 }
 
-/*Shrink navbar on scroll*/
+/* Hide navbar on scroll */
 
 .shrink {
     font-size: 0.8em;
@@ -244,8 +244,8 @@ nav ul {
 
 nav li {
 	font-size: 2em;
-	padding: 12px;
 	color: #fff;
+    padding: 12px;
 }
 
 h4 {
@@ -301,7 +301,6 @@ a:visited {
 	color: #fff;
 }
 
-/* Media Queries*/
 
 
 
