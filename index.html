@@ -64,9 +64,22 @@
                 <a href="https://www.linkedin.com/in/codyperry24"><i class="fa fa-linkedin fa-3x social-icons"></i></a>
             </p>
         </footer>
-        <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+                function downloadJSAtOnload() {
+                var element = document.createElement("script");
+                element.src = "js/lib/jquery-3.0.0.min.js";
+                document.body.appendChild(element);
+                }
+                if (window.addEventListener)
+                window.addEventListener("load", downloadJSAtOnload, false);
+                else if (window.attachEvent)
+                window.attachEvent("onload", downloadJSAtOnload);
+                else window.onload = downloadJSAtOnload;
+        </script>  
         <script type="text/javascript" src="js/lib/typedjs/dist/typed.min.js"></script>
         <script type="text/javascript" src="js/main.min.js"></script>
+        
     </body>
 </html>
 
