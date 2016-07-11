@@ -4,12 +4,16 @@
         <title>Perry's Development</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link async rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
         <!-- Latest compiled and minified JavaScript -->
         <link rel="stylesheet" type="text/css" href="css/style.min.css">
         <link rel="stylesheet" type="text/css" href="css/media-queries.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Perry's Development is a Web Design and Development company. Services offered include Web Design, Idenity Branding, Web Applications, and Software development. Check out our previous projects!">
+        <meta name="keywords" content="web, web design, web development, design, software, web application, mobile, mobile development, websites, seo, branding, html, css, javascript, ui">
+        
     </head>
     <body>
         <div id="wrapper">
@@ -22,37 +26,41 @@
                     <ul class="flex-nav">
                         <li><a href="index.html">Home</a></li> 
                         <li><a href="portfolio.html">Portfolio</a></li> 
-                        <li><a class="active" href="contact.html">Contact</a></li>
+                        <li><a class="active" href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
                 </div>
             </header>
+            
 
+               
         <section id="contactForm" tabindex="-1" role="form" aria-labelledby="Contact Form">
+           <p class="contact-form">Do you have an idea you would like to discuss? Fill out the form below and we will get back to you within 24 hours!</p>
             <!-- Contact Form -->
-            <form class="contact-form" data-toggle="validator">
+            <form method="POST" name="contact_form" action="https://formspree.io/codyperry65@yahoo.com" class="contact-form" data-toggle="validator">
                 <div class="modal-header">Contact Us</div>
                 <!-- Name -->
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" placeholder="Name" id="name" required data-error="Please enter your Name">
+                    <input type="text" class="form-control" name="name" placeholder="Name" id="name" required data-error="Please enter your Name">
                     <div class="help-block with-errors"></div>
                 </div>
                 <!-- Email -->
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input class="form-control" type="text" placeholder="Email" id="email" required data-error="Please enter an Email Address">
+                    <input class="form-control" name="_replyto" type="text" placeholder="Email" id="email" required data-error="Please enter an Email Address">
                     <div class="help-block with-errors"></div>
+                    
                 </div>
                 <!-- Company -->
                 <div class="form-group">
                     <label for="company">Company</label>
-                    <input class="form-control" type="text" placeholder="Company" id="company">
+                    <input class="form-control" name="company" type="text" placeholder="Company" id="company">
                 </div>
                 <!-- Project -->
                 <div class="form-group">
                     <label for="project">What kind of Project?</label>
-                    <input class="form-control" list="project" required data-error="Please Select a project">
+                    <input class="form-control" id="project" list="project" name="project" required data-error="Please enter a project or idea">
                     <datalist id="project">
                         <option value="Web Design">
                         <option value="Web Development">
@@ -64,11 +72,12 @@
                 <!-- Message -->
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" placeholder="Tell us about the project" id="message" required data-error="Write us a message about your idea?"></textarea>
+                    <textarea class="form-control" placeholder="Tell us about the project" name="message" id="message" required data-error="Write us a message about your idea?"></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
                 <!-- Submit button -->
                 <div class="modal-footer">
+                    <input type="hidden" name="_subject" value="New Message from codyperry.com">
                     <button class="btn btn-success btn-lg">Submit</button>
                 </div>
             </form>

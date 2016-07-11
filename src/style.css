@@ -75,11 +75,8 @@
 }
 
 .active {
-	color: #fff;
-	border: 2px solid #D98700;
-	border-radius: 15px;
-	padding: 10px;
-	background: #D98700;
+	color: #D98700 !important;
+    border-bottom: 2px solid #D98700;
 	font-weight: 600;
 }
 
@@ -123,9 +120,14 @@
 }
 
 .contact-form {
-    width: 80%;
+    width: 60%;
     margin: 35px auto 0 auto;
     
+}
+
+p.contact-form {
+    font-size: 1.8em !important;
+    padding: 20px 0;
 }
 
 .modal-content {
@@ -229,6 +231,11 @@
     
 }
 
+.contact-text {
+    font-size: 2em;
+    margin: 0 auto !important;
+}
+
 
 
 /* Element Selectors */
@@ -270,7 +277,7 @@ nav ul {
 }
 
 nav li {
-	font-size: 2em;
+	font-size: 2.2em;
 	color: #fff;
     padding: 20px;
 }
